@@ -1,4 +1,12 @@
-!include names.puml
+!$uif = "my_user_interface"
+!$if = "my_interface"
+!$impl = "my_component"
+!$mock = "my_component_mock"
+!$user = "my_user"
+!$mif = "mock_interface"
+!$unittest = "unittest my_user"
+!$lib = "lib my"
+!$exe_unittest = "unittest my_user"
 
 frame "logic unit structure" {
 interface "$uif" as uif
