@@ -3,7 +3,7 @@ parse:
   _help_additional_commands:
   - Specify structure for custom cmake functions
   additional_commands:
-    me_add_implementation_unit:
+    me_add_implementation_package:
       kwargs:
         PUBLIC_HEADER_DIR: '*'
         PUBLIC_HEADER_DEPENDS: '*'
@@ -11,7 +11,7 @@ parse:
         SOURCE_DIR: '*'
         SOURCE_DEPENDS: '*'
         SOURCES: '*'
-    me_add_unit:
+    me_add_package:
       kwargs:
         PUBLIC_HEADER_DIR: '*'
         PUBLIC_HEADER_DEPENDS: '*'
@@ -19,7 +19,7 @@ parse:
         SOURCE_DIR: '*'
         SOURCE_DEPENDS: '*'
         SOURCES: '*'
-    me_add_interface_unit:
+    me_add_interface_package:
       kwargs:
         PUBLIC_HEADER_DIR: '*'
         PUBLIC_HEADER_DEPENDS: '*'
@@ -30,6 +30,12 @@ parse:
     me_add_library:
       kwargs:
         CONTAINS: '*'
+    me_add_packagetest:
+      kwargs:
+        CONTAINS: '*'
+        SOURCE_DIR: '*'
+        SOURCE_DEPENDS: '*'
+        SOURCES: '*'
   _help_override_spec:
   - Override configurations per-command where available
   override_spec: {}
@@ -49,7 +55,7 @@ format:
   line_width: 100
   _help_tab_size:
   - How many spaces to tab for indent
-  tab_size: 2
+  tab_size: 4
   _help_use_tabchars:
   - If true, lines are indented using tab characters (utf-8
   - 0x09) instead of <tab_size> space characters (utf-8 0x20).
@@ -89,7 +95,7 @@ format:
   _help_dangle_parens:
   - If a statement is wrapped to more than one line, than dangle
   - the closing parenthesis on its own line.
-  dangle_parens: false
+  dangle_parens: true
   _help_dangle_align:
   - If the trailing parenthesis must be 'dangled' on its on
   - 'line, then align it to this reference: `prefix`: the start'
