@@ -4,6 +4,8 @@
 #include <memory>
 #include <string>
 
+#include "me_std/optional_ref.hpp"
+
 namespace example {
 
 class My_component {

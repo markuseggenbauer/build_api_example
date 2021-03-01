@@ -5,6 +5,8 @@ project(build_api_example)
 include(setup.cmake)
 
 find_package(build_api)
+find_package(me_std)
+
 find_package(GTest)
 include(CTest)
 
