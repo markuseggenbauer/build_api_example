@@ -12,8 +12,6 @@ me_add_executable(
         my_component_impl
 )
 
-find_package(GTest)
-
 me_add_executable(
     my_program_mocked
     CONTAINS

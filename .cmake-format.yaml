@@ -36,6 +36,10 @@ parse:
         SOURCE_DIR: '*'
         SOURCE_DEPENDS: '*'
         SOURCES: '*'
+    me_find_package:
+      kwargs:
+        COMPONENTS: '*'
+        OPTIONAL_COMPONENTS: '*'
   _help_override_spec:
   - Override configurations per-command where available
   override_spec: {}
