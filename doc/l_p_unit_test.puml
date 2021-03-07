@@ -1,0 +1,10 @@
+!include l_unit_test.puml
+!include p_unit_test.puml
+!include l_p_unit.puml
+
+mock ..> ot_mock : <<manifest>>
+unittest ..> ot_unittest : <<manifest>>
+
+ot_mock -up-> ot_if : depends
+ot_unittest -left-> ot_user : depends
+ot_unittest --> ot_mock : depends

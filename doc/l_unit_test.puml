@@ -1,0 +1,12 @@
+!include names.puml
+
+!include l_unit.puml
+
+component "$unittest" <<unit>>  as unittest
+component "$mock" <<unit>>  as mock
+interface "$mif" as mif
+
+unittest #--> uif
+unittest #--> mif
+if --# mock
+mock #-- mif

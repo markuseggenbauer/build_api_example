@@ -1,0 +1,6 @@
+!include l_unit.puml
+!include p_unit.puml
+
+if ..> ot_if : <<manifest>>
+impl ..> ot_impl : <<manifest>>
+user ..> ot_user : <<manifest>>

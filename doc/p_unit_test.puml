@@ -1,0 +1,6 @@
+!include names.puml
+
+frame "physical unit structure" {
+artifact "$mock" <<unit>> as ot_mock
+artifact "$unittest" <<unit>> as ot_unittest
+}

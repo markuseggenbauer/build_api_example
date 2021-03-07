@@ -1,0 +1,11 @@
+!$uif = "my_interface"
+!$if = "your_interface"
+!$impl = "your_component"
+!$mock = "your_component_mock"
+!$user = "my_component"
+!$mif = "mock_interface"
+!$unittest = "unittest my_component"
+!$lib = "lib my_package"
+!$exe_unittest = "unittest my_component"
+
+skinparam Monochrome true

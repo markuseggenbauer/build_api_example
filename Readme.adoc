@@ -14,5 +14,19 @@
 
 == Example
 
-.Example use-cae
-image::http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/markuseggenbauer/build_api_example/master/l_unit.puml[]
+.Unit deploment
+[plantuml, l_unit, svg, align=center]
+....
+@startuml
+!include doc/l_unit.puml
+@enduml
+....
+
+
+.Unit test
+[plantuml, l_unit_test, svg, align=center]
+....
+@startuml
+!include doc/l_unit_test.puml
+@enduml
+....

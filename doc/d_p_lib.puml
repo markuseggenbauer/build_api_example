@@ -1,0 +1,9 @@
+!include p_unit.puml
+
+frame "deployment structure" {
+artifact "$lib" <<library>> as lt_my
+}
+
+ot_user --> lt_my : <<manifest>>
+ot_if --> lt_my : <<manifest>>
+ot_impl --> lt_my : <<manifest>>

@@ -1,0 +1,5 @@
+!include d_unit_test.puml
+
+frame "deployment structure" {
+artifact "$exe_unittest" <<executable>> as dt_unittest
+}

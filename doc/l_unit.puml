@@ -1,0 +1,11 @@
+
+!include names.puml
+
+interface "$uif" as uif
+interface "$if" as if
+component "$impl" <<unit>>  as impl
+component "$user" <<unit>>  as user
+
+uif --# user
+user #--> if
+if --# impl

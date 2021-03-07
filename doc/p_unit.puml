@@ -1,0 +1,10 @@
+!include names.puml
+
+frame "physical unit structure" {
+artifact "$user" <<unit>> as ot_user
+artifact "$if" <<unit>> as ot_if
+artifact "$impl" <<unit>> as ot_impl
+}
+
+ot_impl -right-> ot_if : depends
+ot_user -left-> ot_if : depends
