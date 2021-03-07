@@ -1,7 +1,8 @@
 [requires]
 gtest/1.10.0
-me_build/1.0
-me_std/1.0
+me_package/main
+me_build/main
+me_std/main
 
 [generators]
 cmake_find_package
