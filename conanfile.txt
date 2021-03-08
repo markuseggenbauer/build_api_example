@@ -1,6 +1,6 @@
 [requires]
 gtest/1.10.0
-me_package/main
+me_find_package/main
 me_build/main
 me_std/main
 
